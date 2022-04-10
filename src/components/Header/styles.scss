@@ -7,12 +7,22 @@
   width: 100vw;
   height: 3.563rem;
   padding: 0.5rem 1rem;
-
   z-index: 1000;
   background-color: var(--color-background);
   position: fixed;
+  @media only screen and (min-width: 900px) {
+    padding: 1rem;
+    justify-content: space-around;
+  }
   .logo-box {
-    flex: none;
+    @media only screen and (max-width: 900px) {
+      flex: none;
+    }
+    @media only screen and (min-width: 900px) {
+      img {
+        width: 6.25rem;
+      }
+    }
   }
   .menu-box {
     display: flex;

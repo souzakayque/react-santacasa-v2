@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import PhoneImg from "../../assets/images/icons/phone.png";
 
 import "./styles.scss";
 
 const Footer = () => {
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    setWidth(window.screen.width);
+  }, []);
   return (
     <footer className="footer-container">
       <span className="list-container">
@@ -36,9 +41,11 @@ const Footer = () => {
           <li>Av. Barão de Mauá, 3232 - Jardim Maringá, Mauá - SP</li>
         </ul>
       </span>
-      <span className="copyright">
-        <span>Santa Casa de Mauá</span>
-      </span>
+      {width <= 900 && (
+        <span className="copyright">
+          <span>Santa Casa de Mauá</span>
+        </span>
+      )}
     </footer>
   );
 };

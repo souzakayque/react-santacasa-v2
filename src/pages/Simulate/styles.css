@@ -1,165 +1,310 @@
-.simulate .simulate-container {
-  padding-top: 6.376rem;
+/* MOBILE */
+@media only screen and (max-width: 900px) {
+  .simulate .simulate-container {
+    padding-top: 6.376rem;
+  }
+  .simulate .simulate-container form {
+    width: 92vw;
+    margin: 0 auto;
+    outline: none;
+  }
+  .simulate .simulate-container form .first-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .simulate .simulate-container form .first-section input {
+    padding: 0.5rem 0;
+    margin: 0.75rem 0;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+  .simulate .simulate-container form .second-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .simulate .simulate-container form .second-section .second-section-group-one,
+  .simulate .simulate-container form .second-section .second-section-group-two {
+    min-height: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .simulate .simulate-container form .second-section .second-section-group-one span label,
+  .simulate .simulate-container form .second-section .second-section-group-two span label {
+    margin: 0 0.25rem;
+  }
+  .simulate .simulate-container form .second-section .second-section-group-one span input,
+  .simulate .simulate-container form .second-section .second-section-group-two span input {
+    margin: 0.5rem 0;
+  }
+  .simulate .simulate-container form .third-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .simulate .simulate-container form .third-section .third-section-group-one,
+  .simulate .simulate-container form .third-section .third-section-group-two,
+  .simulate .simulate-container form .third-section .third-section-group-three,
+  .simulate .simulate-container form .third-section .third-section-group-four {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .simulate .simulate-container form .third-section .third-section-group-one div,
+  .simulate .simulate-container form .third-section .third-section-group-two div,
+  .simulate .simulate-container form .third-section .third-section-group-three div,
+  .simulate .simulate-container form .third-section .third-section-group-four div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 33%;
+  }
+  .simulate .simulate-container form .third-section .third-section-group-one div label,
+  .simulate .simulate-container form .third-section .third-section-group-two div label,
+  .simulate .simulate-container form .third-section .third-section-group-three div label,
+  .simulate .simulate-container form .third-section .third-section-group-four div label {
+    margin: 0 0.25rem;
+  }
+  .simulate .simulate-container form .third-section .third-section-group-one div input,
+  .simulate .simulate-container form .third-section .third-section-group-two div input,
+  .simulate .simulate-container form .third-section .third-section-group-three div input,
+  .simulate .simulate-container form .third-section .third-section-group-four div input {
+    margin: 1.5rem 0;
+  }
+  .simulate .simulate-container form .third-section .third-section-group-four {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .simulate .simulate-container form .form-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-self: center;
+  }
+  .simulate .simulate-container form .form-btn input {
+    height: 2.438rem;
+    width: 12.063rem;
+    border-radius: 6.25rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 0.75rem;
+    margin: 0.75rem auto 2rem auto;
+  }
 }
 
-.simulate .simulate-container form {
-  width: 92vw;
-  margin: 0 auto;
-  outline: none;
-}
-
-.simulate .simulate-container form .first-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.simulate .simulate-container form .first-section input {
-  padding: 0.5rem 0;
-  margin: 0.75rem 0;
-  outline: none;
-  border: none;
-  border-bottom: 1px solid #ccc;
-}
-
-.simulate .simulate-container form .second-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.simulate .simulate-container form .second-section .second-section-group-one,
-.simulate .simulate-container form .second-section .second-section-group-two {
-  min-height: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.simulate .simulate-container form .second-section .second-section-group-one span label,
-.simulate .simulate-container form .second-section .second-section-group-two span label {
-  margin: 0 0.25rem;
-}
-
-.simulate .simulate-container form .second-section .second-section-group-one span input,
-.simulate .simulate-container form .second-section .second-section-group-two span input {
-  margin: 0.5rem 0;
-}
-
-.simulate .simulate-container form .third-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.simulate .simulate-container form .third-section .third-section-group-one,
-.simulate .simulate-container form .third-section .third-section-group-two,
-.simulate .simulate-container form .third-section .third-section-group-three,
-.simulate .simulate-container form .third-section .third-section-group-four {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-}
-
-.simulate .simulate-container form .third-section .third-section-group-one div,
-.simulate .simulate-container form .third-section .third-section-group-two div,
-.simulate .simulate-container form .third-section .third-section-group-three div,
-.simulate .simulate-container form .third-section .third-section-group-four div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 33%;
-}
-
-.simulate .simulate-container form .third-section .third-section-group-one div label,
-.simulate .simulate-container form .third-section .third-section-group-two div label,
-.simulate .simulate-container form .third-section .third-section-group-three div label,
-.simulate .simulate-container form .third-section .third-section-group-four div label {
-  margin: 0 0.25rem;
-}
-
-.simulate .simulate-container form .third-section .third-section-group-one div input,
-.simulate .simulate-container form .third-section .third-section-group-two div input,
-.simulate .simulate-container form .third-section .third-section-group-three div input,
-.simulate .simulate-container form .third-section .third-section-group-four div input {
-  margin: 1.5rem 0;
-}
-
-.simulate .simulate-container form .third-section .third-section-group-four {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.simulate .simulate-container form .form-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-self: center;
-}
-
-.simulate .simulate-container form .form-btn input {
-  height: 2.438rem;
-  width: 12.063rem;
-  border-radius: 6.25rem;
-  background-color: var(--color-primary);
-  color: #fff;
-  outline: none;
-  border: none;
-  font-size: 0.75rem;
-  margin: 0.75rem auto 2rem auto;
+/* DESKTOP */
+@media only screen and (min-width: 900px) {
+  .simulate .simulate-container {
+    padding-top: 6.376rem;
+  }
+  .simulate .simulate-container p,
+  .simulate .simulate-container h1 {
+    width: 65rem !important;
+  }
+  .simulate .simulate-container form {
+    width: 65rem;
+    margin: 0 auto;
+    outline: none;
+  }
+  .simulate .simulate-container form .first-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .simulate .simulate-container form .first-section input {
+    padding: 0.5rem 0;
+    margin: 0.75rem 0;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+  .simulate .simulate-container form .second-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .simulate .simulate-container form .second-section .second-section-group-one,
+  .simulate .simulate-container form .second-section .second-section-group-two {
+    min-height: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .simulate .simulate-container form .second-section .second-section-group-one span label,
+  .simulate .simulate-container form .second-section .second-section-group-two span label {
+    margin: 0 0.25rem;
+  }
+  .simulate .simulate-container form .second-section .second-section-group-one span input,
+  .simulate .simulate-container form .second-section .second-section-group-two span input {
+    margin: 0.5rem 0;
+  }
+  .simulate .simulate-container form .third-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .simulate .simulate-container form .third-section .third-section-group-one,
+  .simulate .simulate-container form .third-section .third-section-group-two,
+  .simulate .simulate-container form .third-section .third-section-group-three,
+  .simulate .simulate-container form .third-section .third-section-group-four {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .simulate .simulate-container form .third-section .third-section-group-one div,
+  .simulate .simulate-container form .third-section .third-section-group-two div,
+  .simulate .simulate-container form .third-section .third-section-group-three div,
+  .simulate .simulate-container form .third-section .third-section-group-four div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 33%;
+  }
+  .simulate .simulate-container form .third-section .third-section-group-one div label,
+  .simulate .simulate-container form .third-section .third-section-group-two div label,
+  .simulate .simulate-container form .third-section .third-section-group-three div label,
+  .simulate .simulate-container form .third-section .third-section-group-four div label {
+    margin: 0 0.25rem;
+  }
+  .simulate .simulate-container form .third-section .third-section-group-one div input,
+  .simulate .simulate-container form .third-section .third-section-group-two div input,
+  .simulate .simulate-container form .third-section .third-section-group-three div input,
+  .simulate .simulate-container form .third-section .third-section-group-four div input {
+    margin: 1.5rem 0;
+  }
+  .simulate .simulate-container form .third-section .third-section-group-four {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .simulate .simulate-container form .form-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-self: center;
+  }
+  .simulate .simulate-container form .form-btn input {
+    height: 2.438rem;
+    width: 12.063rem;
+    border-radius: 6.25rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 0.75rem;
+    margin: 0.75rem auto 2rem auto;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

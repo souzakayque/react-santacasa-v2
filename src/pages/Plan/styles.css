@@ -1,9 +1,24 @@
-.plan .plan-container {
-  padding-top: 6.376rem;
+@media only screen and (max-width: 900px) {
+  .plan .plan-container {
+    padding-top: 6.376rem;
+  }
+  .plan .plan-container div .plans-box {
+    text-align: justify;
+    margin: 0 0 2.5rem 0;
+  }
 }
 
-.plan .plan-container .plans-box {
-  text-align: justify;
-  margin: 0 0 2.5rem 0;
+@media only screen and (min-width: 900px) {
+  .plan .plan-container {
+    padding-top: 6.376rem;
+  }
+  .plan .plan-container div .plans-box {
+    text-align: justify;
+    margin: 0 0 2.5rem 0;
+  }
+  .plan .plan-container div p,
+  .plan .plan-container div h1 {
+    width: 65rem !important;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

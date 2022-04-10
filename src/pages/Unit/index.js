@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Header from "../../components/Header/index";
 import Footer from "../../components/Footer/index";
 import SectionBox from "../../components/SectionBox/index";
-import GoogleMaps from "../../components/GoogleMaps";
+//import GoogleMaps from "../../components/GoogleMaps";
 import LookBook from "../../components/LookBook";
 import HighlightedTitle from "../../utils/elements/HighlightedTitle";
 import GoogleMapsInfo from "../../utils/json/googleMapsInfo.json";
@@ -30,7 +30,9 @@ const Unit = () => {
         />
         <HighlightedTitle title={"Conheça nossas unidades"} />
         <LookBook />
-        <GoogleMaps mapsInfo={googleMapsInfo} />
+        {/*
+          <GoogleMaps mapsInfo={googleMapsInfo} />
+          */}
         <SectionBox box={contractPlan} />
         <Footer />
       </div>

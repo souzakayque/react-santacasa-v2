@@ -11,9 +11,16 @@ const SectionBox = (props) => {
   const [typeBox, setTypeBox] = useState("");
   const [type, setType] = useState("");
   const [boxClassName, setBoxClassName] = useState("");
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    setWidth(window.screen.width);
+  }, []);
 
   useEffect(() => {
     setContent(props && props.box && props.box[Object.keys(props.box)[0]]);
+
+    console.log("content", content && content.desktopImage);
   }, []);
 
   useEffect(() => {
@@ -34,30 +41,48 @@ const SectionBox = (props) => {
   }, [content]);
 
   return (
-    <section className={boxClassName}>
-      <ul>
-        {content &&
-          content.content &&
-          content.content.map((i, index) => {
-            return (
-              <li key={i.id}>
-                <SubTitle subtitle={i.title} typeBox={typeBox} />
-                <img
-                  src={require(`../../assets/images/${i.asset}`)}
-                  alt="Sec"
-                  title="Sec"
-                  className="section-image"
-                />
-                <Paragraph text={i.text} sectionBox={true} typeBox={typeBox} />
-                {index !== (content && content.content.length) - 1 && <hr />}
-              </li>
-            );
-          })}
-      </ul>
-      <span>
-        <SectionButton button={content && content.button} typeBox={typeBox} />
-      </span>
-    </section>
+    <div className="section-container">
+      {/*SECTION DESKTOP IMAGE*/}
+      {width > 900 && boxClassName === "section-box-container" && (
+        <div className="section-desktop-image">
+          <img
+            src={require(`../../assets/images/${
+              content && content.desktopImage
+            }`)}
+            alt="Section Santa Casa"
+            title="Section Santa Casa"
+          />
+        </div>
+      )}
+      <section className={boxClassName}>
+        <ul>
+          {content &&
+            content.content &&
+            content.content.map((i, index) => {
+              return (
+                <li key={i.id}>
+                  <SubTitle subtitle={i.title} typeBox={typeBox} />
+                  <img
+                    src={require(`../../assets/images/${i.asset}`)}
+                    alt="Sec"
+                    title="Sec"
+                    className="section-image"
+                  />
+                  <Paragraph
+                    text={i.text}
+                    sectionBox={true}
+                    typeBox={typeBox}
+                  />
+                  {index !== (content && content.content.length) - 1 && <hr />}
+                </li>
+              );
+            })}
+        </ul>
+        <span>
+          <SectionButton button={content && content.button} typeBox={typeBox} />
+        </span>
+      </section>
+    </div>
   );
 };
 

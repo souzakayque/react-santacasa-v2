@@ -1,88 +1,190 @@
-.simulate {
-  .simulate-container {
-    padding-top: 6.376rem;
-    form {
-      width: 92vw;
-      margin: 0 auto;
-      outline: none;
-      .first-section {
-        display: flex;
-        flex-direction: column;
-        input {
-          padding: 0.5rem 0;
-          margin: 0.75rem 0;
-          outline: none;
-          border: none;
-          border-bottom: 1px solid #ccc;
-        }
-      }
-      .second-section {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        .second-section-group-one,
-        .second-section-group-two {
-          min-height: 5rem;
+/* MOBILE */
+
+@media only screen and (max-width: 900px) {
+  .simulate {
+    .simulate-container {
+      padding-top: 6.376rem;
+      form {
+        width: 92vw;
+        margin: 0 auto;
+        outline: none;
+        .first-section {
           display: flex;
-          align-items: flex-start;
-          justify-content: flex-start;
           flex-direction: column;
-          span {
-            label {
-              margin: 0 0.25rem;
-            }
-            input {
-              margin: 0.5rem 0;
+          input {
+            padding: 0.5rem 0;
+            margin: 0.75rem 0;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #ccc;
+          }
+        }
+        .second-section {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          .second-section-group-one,
+          .second-section-group-two {
+            min-height: 5rem;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            span {
+              label {
+                margin: 0 0.25rem;
+              }
+              input {
+                margin: 0.5rem 0;
+              }
             }
           }
         }
-      }
-      .third-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        .third-section-group-one,
-        .third-section-group-two,
-        .third-section-group-three,
-        .third-section-group-four {
+        .third-section {
           display: flex;
-          flex-direction: row;
+          justify-content: center;
           align-items: center;
-          justify-content: space-between;
-          width: 100%;
-          div {
+          flex-direction: column;
+          .third-section-group-one,
+          .third-section-group-two,
+          .third-section-group-three,
+          .third-section-group-four {
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: center;
-            width: 33%;
-            label {
-              margin: 0 0.25rem;
+            justify-content: space-between;
+            width: 100%;
+            div {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              width: 33%;
+              label {
+                margin: 0 0.25rem;
+              }
+              input {
+                margin: 1.5rem 0;
+              }
             }
-            input {
-              margin: 1.5rem 0;
+          }
+          .third-section-group-four {
+            justify-content: center;
+          }
+        }
+        .form-btn {
+          display: flex;
+          align-items: center;
+          justify-self: center;
+          input {
+            height: 2.438rem;
+            width: 12.063rem;
+            border-radius: 6.25rem;
+            background-color: var(--color-primary);
+            color: #fff;
+            outline: none;
+            border: none;
+            font-size: 0.75rem;
+            margin: 0.75rem auto 2rem auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 900px) {
+  .simulate {
+    .simulate-container {
+      p,
+      h1 {
+        width: 65rem !important;
+      }
+      padding-top: 6.376rem;
+      form {
+        width: 65rem;
+        margin: 0 auto;
+        outline: none;
+        .first-section {
+          display: flex;
+          flex-direction: column;
+          input {
+            padding: 0.5rem 0;
+            margin: 0.75rem 0;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #ccc;
+          }
+        }
+        .second-section {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          .second-section-group-one,
+          .second-section-group-two {
+            min-height: 5rem;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            span {
+              label {
+                margin: 0 0.25rem;
+              }
+              input {
+                margin: 0.5rem 0;
+              }
             }
           }
         }
-        .third-section-group-four {
+        .third-section {
+          display: flex;
           justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          .third-section-group-one,
+          .third-section-group-two,
+          .third-section-group-three,
+          .third-section-group-four {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            div {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              width: 33%;
+              label {
+                margin: 0 0.25rem;
+              }
+              input {
+                margin: 1.5rem 0;
+              }
+            }
+          }
+          .third-section-group-four {
+            justify-content: center;
+          }
         }
-      }
-      .form-btn {
-        display: flex;
-        align-items: center;
-        justify-self: center;
-        input {
-          height: 2.438rem;
-          width: 12.063rem;
-          border-radius: 6.25rem;
-          background-color: var(--color-primary);
-          color: #fff;
-          outline: none;
-          border: none;
-          font-size: 0.75rem;
-          margin: 0.75rem auto 2rem auto;
+        .form-btn {
+          display: flex;
+          align-items: center;
+          justify-self: center;
+          input {
+            height: 2.438rem;
+            width: 12.063rem;
+            border-radius: 6.25rem;
+            background-color: var(--color-primary);
+            color: #fff;
+            outline: none;
+            border: none;
+            font-size: 0.75rem;
+            margin: 0.75rem auto 2rem auto;
+          }
         }
       }
     }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import {
   IoIosMedical,
@@ -18,10 +18,16 @@ import GoogleMapsInfo from "../../utils/json/googleMapsInfo.json";
 import Banner from "../../assets/images/banner.png";
 
 import "./styles.css";
-import GoogleMaps from "../../components/GoogleMaps";
-import LookBook from "../../components/LookBook";
+//import GoogleMaps from "../../components/GoogleMaps";
+//import LookBook from "../../components/LookBook";
 
 const Home = () => {
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    setWidth(window.screen.width);
+  }, []);
+
   const [operatorSection] = useState({
     OperatorSection,
   });
@@ -84,28 +90,37 @@ const Home = () => {
             title={
               "Santa casa de Mauá tem os melhores especialistas e laboratórios que um plano de saúde poderia ter."
             }
+            width={width}
           ></Title>
           <Paragraph
             text={
               "Tenha acesso hospitais de excelência, às tecnologias de ponta e ao atendimento mais atencioso da região ABCDMR."
             }
+            width={width}
           />
           <SectionBox box={operatorSection} />
         </article>
         <article className="home-article">
-          <Title title={"Estamos bem localizados, saiba onde nos encontrar:"} />
-          <GoogleMaps mapsInfo={googleMapsInfo} />
+          {/*
+          <Title
+            title={"Estamos bem localizados, saiba onde nos encontrar:"}
+            width={width}
+          />
+            <GoogleMaps mapsInfo={googleMapsInfo} />
           <LookBook />
+            */}
           <Title
             title={"Contrate agora o seu plano, e garanta o seu bem estar!"}
+            width={width}
           />
           <Paragraph
             text={
               'Fale com um de nossos corretores, ou, clique "simular agora" para simular a sua cotação!'
             }
-          ></Paragraph>
+            width={width}
+          />
           <SectionBox box={brokerSection} />
-          <SectionBox box={learnMoreSection} />
+          {width <= 900 && <SectionBox box={learnMoreSection} />}
         </article>
       </div>
       <Footer />

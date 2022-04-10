@@ -59,12 +59,14 @@ const Menu = (props) => {
                 Nossos planos
               </Link>
             </li>
-            <li>
-              <Link to="/unidades">
-                <IoMdPin />
-                Unidades
-              </Link>
-            </li>
+            {/*
+              <li>
+                <Link to="/unidades">
+                  <IoMdPin />
+                  Unidades
+                </Link>
+              </li>
+              */}
             <li>
               <Link to="/simular">
                 <IoIosSearch />
@@ -76,7 +78,23 @@ const Menu = (props) => {
         </div>
       );
     } else {
-      setMenu();
+      setMenu(
+        <div className="menu-list">
+          <ul>
+            <li>
+              <Link to="/">Início</Link>
+            </li>
+            <li>
+              <Link to="/planos">Nossos planos</Link>
+            </li>
+            <li>
+              <Link to="/simular">
+                <b>Simule Aqui!</b>
+              </Link>
+            </li>
+          </ul>
+        </div>
+      );
     }
   }, []);
 

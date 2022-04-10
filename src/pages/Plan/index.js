@@ -14,6 +14,12 @@ import "./styles.scss";
 const Plan = () => {
   const [plans, setPlans] = useState();
   const [contractPlan] = useState({ ContractPlan });
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    setWidth(window.screen.width);
+  }, []);
+
   useEffect(() => {
     setPlans(Plans);
   }, []);
@@ -22,26 +28,30 @@ const Plan = () => {
     <div className="plan">
       <Header />
       <div className="plan-container">
-        <Title
-          title={
-            "Santa casa de Mauá tem os melhores especialistas e laboratórios que um plano de saúde poderia ter."
-          }
-        />
-        <Paragraph
-          text={`Tenha acesso hospitais de excelência,
+        <div>
+          <Title
+            title={
+              "Santa casa de Mauá tem os melhores especialistas e laboratórios que um plano de saúde poderia ter."
+            }
+            width={width}
+          />
+          <Paragraph
+            text={`Tenha acesso hospitais de excelência,
             às tecnologias de ponta e ao atendimento mais atencioso da região ABCDMR`}
-        />
-        <HighlightedTitle title={"Conheça nossos planos"} />
-        {plans &&
-          plans.map((i, index) => {
-            return (
-              <div className="plans-box" key={i.id}>
-                <Title title={i.title} />
-                <Paragraph text={i.paragraph} />
-              </div>
-            );
-          })}
-        <SectionBox box={contractPlan} />
+            width={width}
+          />
+          {width <= 900 && <HighlightedTitle title={"Conheça nossos planos"} />}
+          {plans &&
+            plans.map((i, index) => {
+              return (
+                <div className="plans-box" key={i.id}>
+                  <Title title={i.title} width={width} />
+                  <Paragraph text={i.paragraph} width={width} />
+                </div>
+              );
+            })}
+          {/*<SectionBox box={contractPlan} />*/}
+        </div>
         <Footer />
       </div>
     </div>

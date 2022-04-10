@@ -1,3 +1,4 @@
+/* MOBILE */
 p.paragraph,
 p.primary-paragraph-section-box {
   font-family: Poppins;
@@ -21,6 +22,39 @@ p.secondary-paragraph-section-box {
   color: #fff;
   line-height: 0.914rem;
   width: 92vw;
+  margin: 0 auto;
+}
+
+/* DESTKOP */
+p.paragraph-desktop,
+p.primary-paragraph-section-box-desktop {
+  font-family: Poppins;
+  font-size: 0.75rem;
+  color: #000;
+}
+
+.paragraph-desktop-container {
+  width: 65rem;
+  margin: 0 auto;
+}
+
+.paragraph-desktop-container p.paragraph-desktop {
+  margin: 0 0 1rem 0;
+  width: 32rem;
+  font-size: 1rem;
+}
+
+p.primary-paragraph-section-box-desktop {
+  width: 10rem;
+  text-align: center;
+}
+
+p.secondary-paragraph-section-box-desktop {
+  font-family: Poppins;
+  font-size: 0.75rem;
+  color: #fff;
+  line-height: 0.914rem;
+  width: 65rem;
   margin: 0 auto;
 }
 /*# sourceMappingURL=styles.css.map */

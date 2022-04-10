@@ -14,19 +14,32 @@ const Header = () => {
     setWidth(window.screen.width);
   }, []);
 
-  return (
-    <header className="header-container">
-      <div className="logo-box">
-        <img src={Logo} alt="Logo Santa Casa" title="Logo Santa Casa" />
-      </div>
-      <div className="menu-box">
-        <Link to="/simular" className="simulate-btn">
-          Simule aqui!
-        </Link>
-        <Menu width={width} />
-      </div>
-    </header>
-  );
+  if (width <= 900) {
+    return (
+      <header className="header-container">
+        <div className="logo-box">
+          <img src={Logo} alt="Logo Santa Casa" title="Logo Santa Casa" />
+        </div>
+        <div className="menu-box">
+          <Link to="/simular" className="simulate-btn">
+            Simule aqui!
+          </Link>
+          <Menu width={width} />
+        </div>
+      </header>
+    );
+  } else {
+    return (
+      <header className="header-container">
+        <div className="logo-box">
+          <img src={Logo} alt="Logo Santa Casa" title="Logo Santa Casa" />
+        </div>
+        <div className="menu-box">
+          <Menu width={width} />
+        </div>
+      </header>
+    );
+  }
 };
 
 export default Header;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import Header from "../../components/Header/index";
 import Footer from "../../components/Footer/index";
@@ -15,6 +15,11 @@ const Unit = () => {
   const [phone, setPhone] = useState();
   const [plan, setPlan] = useState();
   const [age, setAge] = useState();
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    setWidth(window.screen.width);
+  }, []);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -35,11 +40,13 @@ const Unit = () => {
       <div className="simulate-container">
         <Title
           title={"Contrate agora o seu plano, e garanta o seu bem estar!"}
+          width={width}
         />
         <Paragraph
           text={`Preencha o formulário abaixo para simular a sua cotação!`}
+          width={width}
         />
-        <HighlightedTitle title={"Faça sua cotação"} />
+        {width <= 900 && <HighlightedTitle title={"Conheça nossos planos"} />}
 
         <form onSubmit={handleSubmit} id="simulate-form">
           <div className="first-section">
@@ -59,7 +66,7 @@ const Unit = () => {
             />
           </div>
 
-          <Title title={"Informe o plano que deseja"} />
+          <Title title={"Informe o plano que deseja"} width={width} />
           <div
             className="second-section"
             onChange={(e) => setPlan(e.target.value)}
@@ -111,6 +118,7 @@ const Unit = () => {
 
           <Title
             title={"Informe as idades de quem você deseja incluir no plano"}
+            width={width}
           />
           <div
             className="third-section"
@@ -179,7 +187,9 @@ const Unit = () => {
           </div>
         </form>
 
-        <SectionBox box={talksBroker} />
+        {/*
+          <SectionBox box={talksBroker} />
+        */}
       </div>
       <Footer />
     </div>

@@ -2,87 +2,183 @@
 @import "../../assets/styles/fonts/styles.scss";
 .home {
   .home-container {
-    .banner-box {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgb(0, 0, 0);
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, transparent);
-      padding-top: 3.563rem;
-      box-shadow: inset 0px 10px 10px 9px rgba(0, 0, 0, 0.25);
-      .banner-text {
-        color: #fff;
-        position: absolute;
+    @media only screen and (max-width: 900px) {
+      .banner-box {
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
-        font-weight: 500;
-        line-height: 1.219rem;
-        width: 16.188rem;
-        height: 3.75rem;
-      }
-      .banner {
-        height: auto;
-        width: -webkit-fill-available;
-        z-index: -1;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, transparent);
+        padding-top: 3.563rem;
+        box-shadow: inset 0px 10px 10px 9px rgba(0, 0, 0, 0.25);
+        .banner-text {
+          color: #fff;
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          font-weight: 500;
+          line-height: 1.219rem;
+          width: 16.188rem;
+          height: 3.75rem;
+        }
+        .banner {
+          height: auto;
+          width: -webkit-fill-available;
+          z-index: -1;
+        }
       }
     }
-    .home-content {
-      background: var(--color-primary);
-      width: 92vw;
-      height: 9rem;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      top: -1rem;
-      position: relative;
-      font-size: 0.75rem;
-      box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
-      border-radius: 0.25rem;
-      .home-content-box {
-        width: max-content;
+    @media only screen and (min-width: 900px) {
+      .banner-box {
+        width: 62.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
-        ul {
+        margin: 0 auto;
+        padding-top: 7rem;
+        .banner-text {
+          color: #fff;
+          position: absolute;
           display: flex;
           align-items: flex-start;
-          justify-content: space-around;
+          justify-content: flex-start;
           flex-direction: column;
-          height: 7rem;
-          margin: 0;
-          padding: 0;
-          li {
+          font-weight: 600;
+          line-height: 2.75rem;
+          width: 40rem;
+          height: auto;
+          font-size: 2.25rem;
+        }
+        .banner {
+          height: auto;
+          width: -webkit-fill-available;
+          z-index: -1;
+          display: flex;
+          border-radius: 0.5rem;
+        }
+      }
+    }
+    @media only screen and (max-width: 900px) {
+      .home-content {
+        background: var(--color-primary);
+        width: 92vw;
+        height: 9rem;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -1rem;
+        position: relative;
+        font-size: 0.75rem;
+        box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+        border-radius: 0.25rem;
+        .home-content-box {
+          width: max-content;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          ul {
             display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: start;
-            list-style-type: none;
-            color: white;
-            padding: 0 0.75rem;
-            svg {
-              padding: 0.5rem;
-              color: #fff;
-              width: 1rem;
-              height: 1rem;
-            }
-            .icon-circle {
-              border-radius: 50%;
-              width: 2rem;
-              height: 2rem;
-              margin: 0.35rem 0.75rem;
-              background-color: rgba(255, 149, 51, 255);
+            align-items: flex-start;
+            justify-content: space-around;
+            flex-direction: column;
+            height: 7rem;
+            margin: 0;
+            padding: 0;
+            li {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: start;
+              list-style-type: none;
+              color: white;
+              padding: 0 0.75rem;
+              svg {
+                padding: 0.5rem;
+                color: #fff;
+                width: 1rem;
+                height: 1rem;
+              }
+              .icon-circle {
+                border-radius: 50%;
+                width: 2rem;
+                height: 2rem;
+                margin: 0.35rem 0.75rem;
+                background-color: rgba(255, 149, 51, 255);
+              }
             }
           }
         }
       }
     }
-    .home-article {
-      width: 100vw;
-      margin: 0 auto;
+    @media only screen and (min-width: 900px) {
+      .home-content {
+        background: var(--color-primary);
+        width: 65rem;
+        height: 9rem;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -1rem;
+        position: relative;
+        font-size: 1.125rem;
+        box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+        border-radius: 0.25rem;
+        .home-content-box {
+          width: max-content;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-direction: column;
+          ul {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+            li {
+              width: 17rem;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: start;
+              list-style-type: none;
+              color: white;
+              padding: 0 0.75rem;
+              svg {
+                padding: 0.5rem;
+                color: #fff;
+                width: 3rem;
+                height: 3rem;
+              }
+              .icon-circle {
+                border-radius: 50%;
+                width: 4rem;
+                height: 4rem;
+                margin: 0.35rem 0.75rem;
+                background-color: rgba(255, 149, 51, 255);
+              }
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 900px) {
+      .home-article {
+        width: 100vw;
+        margin: 0 auto;
+      }
+    }
+    @media only screen and (min-width: 900px) {
+      .home-article {
+        width: 65rem;
+        margin: 0 auto;
+      }
     }
   }
 }

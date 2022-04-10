@@ -32,12 +32,37 @@
   font-family: Poppins;
   font-size: 0.75rem;
   color: #000;
-  margin: 0;
-  padding: 0;
+  list-style: none;
+}
+
+.menu-list ul li {
+  display: inline;
+  padding: 0 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media only screen and (min-width: 900px) {
+  .menu-list ul li a:hover {
+    text-decoration: underline;
+  }
 }
 
 .menu-list ul li a {
   text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+
+@media only screen and (max-width: 900px) {
+  .menu-list ul li {
+    display: block;
+    padding: 0;
+  }
+  .menu-list ul li a {
+    text-decoration: none;
+    font-size: 0.75rem;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -47,6 +72,8 @@
             transform: translateX(18.438rem);
     -webkit-transition: 0.2s;
     transition: 0.2s;
+    margin: 0;
+    padding: 0;
   }
 }
 

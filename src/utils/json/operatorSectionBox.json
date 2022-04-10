@@ -20,6 +20,7 @@
       "text": "Benefícios para filiados a sindicatos"
     }
   ],
+  "desktopImage": "section_3.png",
   "button": {
     "value": "Conheça nossos planos",
     "to": "/planos"
