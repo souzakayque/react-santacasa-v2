@@ -1,0 +1,33 @@
+@mixin title {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.219rem;
+  font-weight: 600;
+}
+
+@mixin subtitle {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.25rem;
+  color: #ff7a00;
+}
+
+@mixin text-primary {
+  font-family: Poppins;
+  font-size: 0.75rem;
+  color: #000;
+}
+
+@mixin text-secondary {
+  font-family: Poppins;
+  font-size: 0.75rem;
+  color: #fff;
+  line-height: 0.914rem;
+}
+
+@mixin text-default {
+  font-family: Poppins;
+}

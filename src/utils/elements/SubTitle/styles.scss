@@ -1,0 +1,14 @@
+@import "../../../assets/styles/fonts/styles.scss";
+
+h2.primary-subtitle {
+  @include subtitle;
+  margin: 1rem auto;
+  width: auto;
+}
+
+h2.secondary-subtitle {
+  @include subtitle;
+  padding: 1.313rem 1rem;
+  width: auto;
+  color: #fff;
+}

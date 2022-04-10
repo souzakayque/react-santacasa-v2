@@ -1,0 +1,22 @@
+@import "../../../assets/styles/fonts/styles.scss";
+
+p.paragraph,
+p.primary-paragraph-section-box {
+  @include text-primary;
+}
+
+p.paragraph {
+  margin: 0 auto 1rem auto;
+  width: 92vw;
+}
+
+p.primary-paragraph-section-box {
+  width: 10rem;
+  text-align: center;
+}
+
+p.secondary-paragraph-section-box {
+  @include text-secondary;
+  width: 92vw;
+  margin: 0 auto;
+}

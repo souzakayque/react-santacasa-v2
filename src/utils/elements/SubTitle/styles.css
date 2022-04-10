@@ -1,0 +1,23 @@
+h2.primary-subtitle {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.25rem;
+  color: #ff7a00;
+  margin: 1rem auto;
+  width: auto;
+}
+
+h2.secondary-subtitle {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.25rem;
+  color: #ff7a00;
+  padding: 1.313rem 1rem;
+  width: auto;
+  color: #fff;
+}
+/*# sourceMappingURL=styles.css.map */

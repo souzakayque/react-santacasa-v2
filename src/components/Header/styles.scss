@@ -1,0 +1,33 @@
+@import "../../assets/styles/global.scss";
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 3.563rem;
+  padding: 0.5rem 1rem;
+
+  z-index: 1000;
+  background-color: var(--color-background);
+  position: fixed;
+  .logo-box {
+    flex: none;
+  }
+  .menu-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 1rem;
+    .simulate-btn {
+      display: block;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #000;
+      text-decoration: underline;
+      cursor: pointer;
+      margin: 0 0.75rem;
+    }
+  }
+}

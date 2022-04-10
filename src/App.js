@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import Router from "./router/router";
+
+import WhatsAppIco from "./assets/images/icons/whatsapp.ico";
+
+import "./assets/styles/global.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [width, setWidth] = useState();
+  useEffect(() => {
+    setWidth(window.screen.width);
+  });
+
+  if (width <= 600) {
+    return (
+      <div>
+        <div className="container-whatsapp">
+          <span>Fale com o corretor!</span>
+          <a href="https://api.whatsapp.com/send?phone=+5511993691207&text=Gostaria%20de%20cotar%20um%20plano%20da%20Santa%20Casa%20de%20Mau%C3%A1">
+            <img src={WhatsAppIco} alt="WhatsApp" title="WhatsApp" />
+          </a>
+        </div>
+        <Router />
+      </div>
+    );
+  } else {
+    return <div></div>;
+  }
 }
 
 export default App;

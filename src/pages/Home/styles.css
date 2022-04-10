@@ -1,0 +1,169 @@
+:root {
+  --color-background: #ffffff;
+  --color-primary: #ff7a00;
+  --color-box-footer: #f6f6f6;
+  --color-box-section: #f6f6f6;
+  --color-font-text: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-background);
+}
+
+.root {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.home .home-container .banner-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: black;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(transparent));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, transparent);
+  padding-top: 3.563rem;
+  -webkit-box-shadow: inset 0px 10px 10px 9px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 10px 10px 9px rgba(0, 0, 0, 0.25);
+}
+
+.home .home-container .banner-box .banner-text {
+  color: #fff;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 500;
+  line-height: 1.219rem;
+  width: 16.188rem;
+  height: 3.75rem;
+}
+
+.home .home-container .banner-box .banner {
+  height: auto;
+  width: -webkit-fill-available;
+  z-index: -1;
+}
+
+.home .home-container .home-content {
+  background: var(--color-primary);
+  width: 92vw;
+  height: 9rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: -1rem;
+  position: relative;
+  font-size: 0.75rem;
+  -webkit-box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.25rem;
+}
+
+.home .home-container .home-content .home-content-box {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home .home-container .home-content .home-content-box ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 7rem;
+  margin: 0;
+  padding: 0;
+}
+
+.home .home-container .home-content .home-content-box ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  list-style-type: none;
+  color: white;
+  padding: 0 0.75rem;
+}
+
+.home .home-container .home-content .home-content-box ul li svg {
+  padding: 0.5rem;
+  color: #fff;
+  width: 1rem;
+  height: 1rem;
+}
+
+.home .home-container .home-content .home-content-box ul li .icon-circle {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.35rem 0.75rem;
+  background-color: #ff9533;
+}
+
+.home .home-container .home-article {
+  width: 100vw;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=styles.css.map */

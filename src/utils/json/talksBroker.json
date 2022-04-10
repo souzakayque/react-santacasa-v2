@@ -1,0 +1,15 @@
+{
+  "type": 2,
+  "content": [
+    {
+      "id": 0,
+      "title": "Contrate agora o seu plano, e garanta o seu bem estar!",
+      "asset": "section_2.png",
+      "text": "Fale com um de nossos corretores!"
+    }
+  ],
+  "button": {
+    "value": "Falar com corretor",
+    "to": "/"
+  }
+}

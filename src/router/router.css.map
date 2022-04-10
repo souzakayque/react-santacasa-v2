@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACV,OAAO,EAAE,CAAC;EACV,OAAO,EAAE,CAAC;CACX;;AAED,AAAA,UAAU,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;AAED,AAAA,WAAW,AAAA,kBAAkB,CAAC;EAC5B,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,qBAAqB;CAClC",
+    "sources": [
+        "router.scss"
+    ],
+    "names": [],
+    "file": "router.css"
+}

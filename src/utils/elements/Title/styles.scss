@@ -1,0 +1,15 @@
+@import "../../../assets/styles/fonts/styles.scss";
+
+h1.primary-title {
+  @include title;
+  margin: 1rem auto;
+  width: 92vw;
+  color: #000;
+}
+
+h1.secondary-title {
+  @include title;
+  margin: 1rem auto;
+  width: 92vw;
+  color: #fff;
+}

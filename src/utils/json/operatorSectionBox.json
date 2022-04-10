@@ -1,0 +1,27 @@
+{
+  "type": 1,
+  "content": [
+    {
+      "id": 0,
+      "title": "Plano Individual/Familiar",
+      "asset": "icons/bag.png",
+      "text": "Proteja você e sua família"
+    },
+    {
+      "id": 1,
+      "title": "Plano Empresarial",
+      "asset": "icons/bag.png",
+      "text": "Conforto e bem estar para seus funcionários"
+    },
+    {
+      "id": 2,
+      "title": "Plano Coletivo por Adesão",
+      "asset": "icons/bag.png",
+      "text": "Benefícios para filiados a sindicatos"
+    }
+  ],
+  "button": {
+    "value": "Conheça nossos planos",
+    "to": "/planos"
+  }
+}

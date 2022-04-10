@@ -1,0 +1,27 @@
+{
+  "type": 1,
+  "content": [
+    {
+      "id": 0,
+      "title": "Corretora Marcia",
+      "asset": "icons/phone.png",
+      "text": "(11) 98269-6977"
+    },
+    {
+      "id": 1,
+      "title": "Corretor Valdir",
+      "asset": "icons/whatsapp.png",
+      "text": "(11) 99369-1207"
+    },
+    {
+      "id": 2,
+      "title": "Corretor Valdir",
+      "asset": "icons/phone.png",
+      "text": "(11) 3421-4743"
+    }
+  ],
+  "button": {
+    "value": "Simular agora",
+    "to": "/"
+  }
+}
