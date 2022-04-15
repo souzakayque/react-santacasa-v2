@@ -16,19 +16,26 @@ const Footer = () => {
         <h1>Fale com o Corretor</h1>
         <ul>
           <li>
-            <img src={PhoneImg} alt="Phone" tile="phone" />
-            <span>(11) 3421-4743</span>
+            <a href="tel:551134214743">
+              <img src={PhoneImg} alt="Phone" tile="phone" />
+              <span>(11) 3421-4743</span>
+            </a>
           </li>
           <li>
-            <img src={PhoneImg} alt="Phone" tile="phone" />
-            <span>(11) 98269-6977</span>
+            <a href="tel:5511982696977">
+              <img src={PhoneImg} alt="Phone" tile="phone" />
+              <span>(11) 98269-6977</span>
+            </a>
           </li>
           <li>
-            <img src={PhoneImg} alt="Phone" tile="phone" />
-            <span>(11) 99369-1207</span>
+            <a href="tel:5511993691207">
+              <img src={PhoneImg} alt="Phone" tile="phone" />
+              <span>(11) 99369-1207</span>
+            </a>
           </li>
         </ul>
       </span>
+      {/*
       <span className="list-container">
         <h1>Atendimento</h1>
         <ul>
@@ -41,6 +48,7 @@ const Footer = () => {
           <li>Av. Barão de Mauá, 3232 - Jardim Maringá, Mauá - SP</li>
         </ul>
       </span>
+      */}
       {width <= 900 && (
         <span className="copyright">
           <span>Santa Casa de Mauá</span>

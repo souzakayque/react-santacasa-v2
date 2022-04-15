@@ -20,9 +20,11 @@ const SectionButton = (props) => {
   }, [props, typeBox]);
 
   return (
-    <button className={buttonClass}>
-      {props && props.button && props.button.value}
-    </button>
+    <a href={props && props.button && props.button.to}>
+      <button className={buttonClass}>
+        {props && props.button && props.button.value}
+      </button>
+    </a>
   );
 };
 

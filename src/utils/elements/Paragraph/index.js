@@ -12,11 +12,19 @@ const Paragraph = (props) => {
       );
     } else {
       if (props && props.typeBox === "primary") {
-        return (
-          <p className="primary-paragraph-section-box-desktop">
-            {props && props.text}
-          </p>
-        );
+        if (props && props.size === "1.25") {
+          return (
+            <p className="primary-paragraph-section-box-desktop-biggest">
+              {props && props.text}
+            </p>
+          );
+        } else {
+          return (
+            <p className="primary-paragraph-section-box-desktop">
+              {props && props.text}
+            </p>
+          );
+        }
       } else {
         return (
           <p className="secondary-paragraph-section-box-desktop">
@@ -30,9 +38,19 @@ const Paragraph = (props) => {
       return <p className="paragraph">{props && props.text}</p>;
     } else {
       if (props && props.typeBox === "primary") {
-        return (
-          <p className="primary-paragraph-section-box">{props && props.text}</p>
-        );
+        if (props && props.size === "1.25") {
+          return (
+            <p className="primary-paragraph-section-box-biggest">
+              {props && props.text}
+            </p>
+          );
+        } else {
+          return (
+            <p className="primary-paragraph-section-box">
+              {props && props.text}
+            </p>
+          );
+        }
       } else {
         return (
           <p className="secondary-paragraph-section-box">

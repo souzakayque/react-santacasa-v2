@@ -1,4 +1,8 @@
-button.primary-section-button {
+a {
+  text-decoration: none;
+}
+
+a button.primary-section-button {
   height: 2.438rem;
   width: 12.063rem;
   border-radius: 6.25rem;
@@ -10,7 +14,11 @@ button.primary-section-button {
   margin: 0.75rem auto 2rem auto;
 }
 
-button.secondary-section-button {
+a {
+  text-decoration: none;
+}
+
+a button.secondary-section-button {
   width: auto;
   height: 1.813rem;
   font-weight: 400;

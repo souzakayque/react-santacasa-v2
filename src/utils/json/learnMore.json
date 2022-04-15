@@ -3,13 +3,13 @@
   "content": [
     {
       "id": 0,
-      "title": "Ainda quer saber mais sobre os nossos planos?",
+      "title": "Quer saber ainda mais sobre os nossos planos?",
       "asset": "section_1.png",
       "text": "Preparamos um texto informativo sobre cada modalidade para tirar suas dúvidas."
     }
   ],
   "button": {
     "value": "Saiba +",
-    "to": "/"
+    "to": "/simular"
   }
 }

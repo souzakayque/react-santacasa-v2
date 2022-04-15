@@ -10,7 +10,7 @@ function App() {
     <div>
       <div className="container-whatsapp">
         <span>Fale com o corretor!</span>
-        <a href="https://api.whatsapp.com/send?phone=+5511993691207&text=Gostaria%20de%20cotar%20um%20plano%20da%20Santa%20Casa%20de%20Mau%C3%A1">
+        <a href="https://api.whatsapp.com/send?phone=+5511982626977&text=Gostaria%20de%20cotar%20um%20plano%20da%20Santa%20Casa%20de%20Mau%C3%A1">
           <img src={WhatsAppIco} alt="WhatsApp" title="WhatsApp" />
         </a>
       </div>

@@ -26,10 +26,6 @@ const Unit = () => {
 
     var param = `Oi sou ${name}. Gostaria de cotar o plano ${plan}. Contato: ${phone}`;
 
-    console.log(param);
-
-    debugger;
-
     window.location.href = `https://api.whatsapp.com/send?phone=+5511993691207&text=${param}`;
   }
 

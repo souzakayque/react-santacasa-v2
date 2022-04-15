@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import Menu from "../Menu/index";
+import TopBar from "../TopBar/index";
 
 import Logo from "../../assets/images/santacasa.png";
 
@@ -16,28 +17,34 @@ const Header = () => {
 
   if (width <= 900) {
     return (
-      <header className="header-container">
-        <div className="logo-box">
-          <img src={Logo} alt="Logo Santa Casa" title="Logo Santa Casa" />
-        </div>
-        <div className="menu-box">
-          <Link to="/simular" className="simulate-btn">
-            Simule aqui!
-          </Link>
-          <Menu width={width} />
-        </div>
-      </header>
+      <div className="container">
+        <TopBar />
+        <header className="header-container">
+          <div className="logo-box">
+            <img src={Logo} alt="Logo Santa Casa" title="Logo Santa Casa" />
+          </div>
+          <div className="menu-box">
+            <Link to="/simular" className="simulate-btn">
+              Simule aqui!
+            </Link>
+            <Menu width={width} />
+          </div>
+        </header>
+      </div>
     );
   } else {
     return (
-      <header className="header-container">
-        <div className="logo-box">
-          <img src={Logo} alt="Logo Santa Casa" title="Logo Santa Casa" />
-        </div>
-        <div className="menu-box">
-          <Menu width={width} />
-        </div>
-      </header>
+      <div className="container">
+        <TopBar />
+        <header className="header-container-desktop">
+          <div className="logo-box">
+            <img src={Logo} alt="Logo Santa Casa" title="Logo Santa Casa" />
+          </div>
+          <div className="menu-box">
+            <Menu width={width} />
+          </div>
+        </header>
+      </div>
     );
   }
 };

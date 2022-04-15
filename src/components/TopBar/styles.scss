@@ -1,0 +1,59 @@
+@import "../../assets/styles/global.scss";
+
+@media only screen and (max-width: 900px) {
+  .top-bar-container {
+    width: 100vw;
+    height: 2rem;
+    background-color: var(--color-primary);
+    .top-bar-box {
+      width: 92vw;
+      margin: 0 auto;
+      ul {
+        display: flex;
+        height: 2rem;
+        align-items: center;
+        justify-content: flex-end;
+        li {
+          display: inline;
+          font-size: 1rem;
+          color: var(--color-background);
+          font-weight: 600;
+          padding: 0 0.5rem;
+          a {
+            color: var(--color-background);
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .top-bar-container {
+    width: 100vw;
+    height: 2rem;
+    background-color: var(--color-primary);
+    .top-bar-box {
+      width: 65vw;
+      margin: 0 auto;
+      ul {
+        display: flex;
+        height: 2rem;
+        align-items: center;
+        justify-content: flex-end;
+        li {
+          display: inline;
+          font-size: 1rem;
+          color: var(--color-background);
+          font-weight: 600;
+          padding: 0 0.5rem;
+          a {
+            color: var(--color-background);
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

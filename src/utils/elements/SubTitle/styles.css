@@ -7,6 +7,7 @@ h2.primary-subtitle {
   color: #ff7a00;
   margin: 1rem auto;
   width: auto;
+  text-align: center;
 }
 
 h2.secondary-subtitle {

@@ -9,6 +9,7 @@ import "./styles.scss";
 const SectionBox = (props) => {
   const [content, setContent] = useState("");
   const [typeBox, setTypeBox] = useState("");
+  const [paragraphSize, setParagraphSize] = useState("");
   const [type, setType] = useState("");
   const [boxClassName, setBoxClassName] = useState("");
   const [width, setWidth] = useState(0);
@@ -19,11 +20,13 @@ const SectionBox = (props) => {
 
   useEffect(() => {
     setContent(props && props.box && props.box[Object.keys(props.box)[0]]);
-
-    console.log("content", content && content.desktopImage);
   }, []);
 
   useEffect(() => {
+    setParagraphSize(
+      props && props.box && props.box[Object.keys(props.box)[0]].paragraphSize
+    );
+
     setType(props && props.box && props.box[Object.keys(props.box)[0]].type);
 
     switch (type) {
@@ -72,6 +75,7 @@ const SectionBox = (props) => {
                     text={i.text}
                     sectionBox={true}
                     typeBox={typeBox}
+                    size={paragraphSize}
                   />
                   {index !== (content && content.content.length) - 1 && <hr />}
                 </li>

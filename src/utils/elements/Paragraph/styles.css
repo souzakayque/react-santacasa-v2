@@ -16,6 +16,13 @@ p.primary-paragraph-section-box {
   text-align: center;
 }
 
+p.primary-paragraph-section-box-biggest {
+  width: 10rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
 p.secondary-paragraph-section-box {
   font-family: Poppins;
   font-size: 0.75rem;
@@ -47,6 +54,13 @@ p.primary-paragraph-section-box-desktop {
 p.primary-paragraph-section-box-desktop {
   width: 10rem;
   text-align: center;
+}
+
+p.primary-paragraph-section-box-desktop-biggest {
+  width: 10rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 p.secondary-paragraph-section-box-desktop {
