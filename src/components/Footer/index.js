@@ -22,9 +22,9 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="tel:5511982696977">
+            <a href="tel:5511982626977">
               <img src={PhoneImg} alt="Phone" tile="phone" />
-              <span>(11) 98269-6977</span>
+              <span>(11) 98262-6977</span>
             </a>
           </li>
           <li>
