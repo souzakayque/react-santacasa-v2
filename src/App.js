@@ -12,7 +12,7 @@ function App() {
       <div className="container-whatsapp">
         <div className="whatsapp-box">
           <span className="phone-popup">Ligue para o corretor!</span>
-          <a href="tel:43214743">
+          <a href="tel:+551134214743">
             <img src={PhoneIco} alt="WhatsApp" title="WhatsApp" />
           </a>
         </div>
