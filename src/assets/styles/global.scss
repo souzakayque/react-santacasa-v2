@@ -31,29 +31,42 @@ body {
   height: auto;
   z-index: 1000;
   margin: 0 auto;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
+  flex-direction: column;
   position: fixed;
   height: auto;
   bottom: 0.75rem;
   right: 0.75rem;
-  span {
-    width: auto;
-    height: auto;
-    background-color: #26a218;
-    color: white;
-    margin: 0 1rem;
-    padding: 0 1rem;
-    font-weight: 500;
-    font-size: 1rem;
-    border-radius: 0.25rem;
-  }
-  img {
-    width: 64px;
-    height: 64px;
-    display: block;
-    border-radius: 50%;
-    -webkit-box-shadow: 12px 6px 14px -1px rgba(0, 0, 0, 0.45);
-    box-shadow: 12px 6px 14px -1px rgba(0, 0, 0, 0.45);
+  .whatsapp-box {
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    display: flex;
+    padding: 0.25rem;
+    span {
+      width: auto;
+      height: auto;
+      color: white;
+      margin: 0 1rem;
+      padding: 0 1rem;
+      font-weight: 500;
+      font-size: 1rem;
+      border-radius: 0.25rem;
+    }
+    span.whatsapp-popup {
+      background-color: #26a218;
+    }
+    span.phone-popup {
+      background-color: var(--color-primary);
+    }
+    img {
+      width: 64px;
+      height: 64px;
+      display: block;
+      border-radius: 50%;
+      -webkit-box-shadow: 12px 6px 14px -1px rgba(0, 0, 0, 0.45);
+      box-shadow: 12px 6px 14px -1px rgba(0, 0, 0, 0.45);
+    }
   }
 }
