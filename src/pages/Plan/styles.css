@@ -1,6 +1,6 @@
 @media only screen and (max-width: 900px) {
   .plan .plan-container {
-    padding-top: 6.376rem;
+    padding-top: 9.376rem;
   }
   .plan .plan-container div .plans-box {
     text-align: justify;
@@ -10,7 +10,7 @@
 
 @media only screen and (min-width: 900px) {
   .plan .plan-container {
-    padding-top: 6.376rem;
+    padding-top: 9.376rem;
   }
   .plan .plan-container div .plans-box {
     text-align: justify;

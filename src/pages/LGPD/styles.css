@@ -1,0 +1,32 @@
+/*MOBILE*/
+@media only screen and (max-width: 900px) {
+  .LGPD .LGPD-container {
+    padding-top: 9.376rem;
+  }
+  .LGPD .LGPD-container div .LGPD-logo-image {
+    margin: 2rem auto 0 auto;
+    width: 92vw;
+  }
+  .LGPD .LGPD-container div .LGPD-logo-image img {
+    width: 10rem;
+  }
+}
+
+/*DESKTOP*/
+@media only screen and (min-width: 900px) {
+  .LGPD .LGPD-container {
+    padding-top: 9.376rem;
+  }
+  .LGPD .LGPD-container div p,
+  .LGPD .LGPD-container div h1 {
+    width: 65rem !important;
+  }
+  .LGPD .LGPD-container div .LGPD-logo-image {
+    margin: 2rem auto 0 auto;
+    width: 65rem;
+  }
+  .LGPD .LGPD-container div .LGPD-logo-image img {
+    width: 10rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

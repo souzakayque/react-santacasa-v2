@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import PhoneImg from "../../assets/images/icons/phone.png";
 
@@ -32,6 +33,14 @@ const Footer = () => {
               <img src={PhoneImg} alt="Phone" tile="phone" />
               <span>(11) 99369-1207</span>
             </a>
+          </li>
+        </ul>
+      </span>
+      <span className="list-container">
+        <h1>Política de Privacidade</h1>
+        <ul>
+          <li>
+            <Link to="/lgpd">Lei Geral de Proteção de Dados</Link>
           </li>
         </ul>
       </span>

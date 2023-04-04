@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import "./styles.scss";
 
 const Title = (props) => {
+  console.log(props && props.width);
   if (props && props.width > 900) {
     return (
       <div className="primary-title-desktop-container">
