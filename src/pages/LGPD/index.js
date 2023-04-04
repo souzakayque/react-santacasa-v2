@@ -8,7 +8,7 @@ import "./styles.scss";
 
 const LGPD = (props) => {
   const [width, setWidth] = useState(0);
-  const [logo, setLogo] = useState("marcia_logo.jpeg");
+  const [logo, setLogo] = useState("marcia_logo.png");
 
   useEffect(() => {
     setWidth(window.screen.width);

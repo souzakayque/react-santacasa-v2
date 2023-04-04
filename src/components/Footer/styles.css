@@ -129,10 +129,13 @@ body {
     text-decoration: none;
     color: #000;
   }
-  .footer-container .list-container ul li img {
+  .footer-container .list-container ul li .footer-icon {
     margin: 0 1rem 0 0;
     width: 0.75rem;
     height: auto;
+  }
+  .footer-container .list-container ul li .footer-logo {
+    width: 10rem;
   }
   .footer-container .copyright {
     font-size: 0.75rem;
@@ -200,10 +203,13 @@ body {
     text-decoration: none;
     color: #000;
   }
-  .footer-container .list-container ul li img {
+  .footer-container .list-container ul li .footer-icon {
     margin: 0 1rem 0 0;
     width: 0.75rem;
     height: auto;
+  }
+  .footer-container .list-container ul li .footer-logo {
+    width: 10rem;
   }
   .footer-container .copyright {
     font-size: 0.75rem;
