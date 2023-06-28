@@ -60,6 +60,8 @@ const Footer = () => {
           </li>
         </ul>
       </span>
+      <br />
+      <br />
       <span className="list-container">
         <h1>{""}</h1>
         <ul>
@@ -72,6 +74,11 @@ const Footer = () => {
               title="Logo Marcia Corretora de Seguros"
             />
           </li>
+          <li>Marcia Corretora de Seguros Ltda.</li>
+          <li>CNPJ: 29.752.203/0001-16 | SUSEP n°202064269</li>
+          <li>Avenida Barão de Mauá, 3232 Sala 12</li>
+          <li>Jd. Maringá Mauá - SP.</li>
+          <li>CEP - 09340-440</li>
         </ul>
       </span>
       {/*
