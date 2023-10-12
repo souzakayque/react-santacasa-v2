@@ -1,0 +1,25 @@
+@import "../../assets/styles/global.scss";
+
+/* MOBILE */
+
+@media only screen and (max-width: 900px) {
+  .pop-up-strip-container {
+    width: 100vw;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .pop-up-strip {
+      background-color: var(--color-primary);
+      width: 92vw;
+      height: -webkit-fill-available;
+      border-radius: 0.25rem;
+      display: flex;
+      p {
+        color: var(--color-background) !important;
+        margin: 0 auto !important;
+        width: fit-content;
+      }
+    }
+  }
+}

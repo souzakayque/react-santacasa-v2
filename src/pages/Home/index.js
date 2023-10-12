@@ -18,6 +18,8 @@ import GoogleMapsInfo from "../../utils/json/googleMapsInfo.json";
 import Banner from "../../assets/images/banner.png";
 
 import "./styles.css";
+import PopUp from "../../components/PopUp";
+import PopUpStrip from "../../components/PopUpStrip";
 //import GoogleMaps from "../../components/GoogleMaps";
 //import LookBook from "../../components/LookBook";
 

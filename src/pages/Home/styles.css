@@ -29,7 +29,7 @@ body {
   display: flex;
   width: auto;
   height: auto;
-  z-index: 1000;
+  z-index: 999;
   margin: 0 auto;
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -106,7 +106,7 @@ body {
     background: black;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(transparent));
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, transparent);
-    padding-top: 7.563rem;
+    padding-top: 8.563rem;
     -webkit-box-shadow: inset 0px 10px 10px 9px rgba(0, 0, 0, 0.25);
             box-shadow: inset 0px 10px 10px 9px rgba(0, 0, 0, 0.25);
   }
