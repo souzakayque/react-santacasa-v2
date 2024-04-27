@@ -3,7 +3,7 @@ import Router from "./router/router";
 
 import WhatsAppIco from "./assets/images/icons/whatsapp.ico";
 import PhoneIco from "./assets/images/icons/phone.ico";
-import PopUp from "./components/PopUp";
+//import PopUp from "./components/PopUp";
 
 import "./assets/styles/global.css";
 
@@ -15,7 +15,7 @@ function App() {
   if (width <= 900) {
     return (
       <div>
-        <PopUp />
+        {/*<PopUp />*/}
         <div className="container-whatsapp">
           <div className="whatsapp-box">
             <span className="phone-popup">Ligue para o corretor!</span>

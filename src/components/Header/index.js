@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import Menu from "../Menu/index";
 import TopBar from "../TopBar/index";
-import PopUpStrip from "../PopUpStrip/index";
+//import PopUpStrip from "../PopUpStrip/index";
 
 import Logo from "../../assets/images/santacasa.png";
 
@@ -31,7 +31,7 @@ const Header = () => {
             <Menu width={width} />
           </div>
         </header>
-        <PopUpStrip />
+        {/*<PopUpStrip />*/}
       </div>
     );
   } else {
